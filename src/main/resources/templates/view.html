@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"/>
+  <title th:text="${task.title}">Task</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body class="container py-4">
+  <a href="/" class="btn btn-link">&larr; Back</a>
+  <h1 th:text="${task.title}">Task</h1>
+  <p><strong>Description:</strong> <span th:text="${task.description}">desc</span></p>
+  <p><strong>Deadline:</strong> <span th:text="${task.deadline}">-</span></p>
+  <p><strong>Completed:</strong> <span th:text="${task.completed}">false</span></p>
+
+  <hr/>
+  <h4>Notes</h4>
+  <ul class="list-group mb-3">
+    <li class="list-group-item" th:each="n : ${task.notes}">
+      <h6 th:text="${n.title}">Note title</h6>
+      <p th:text="${n.body}">Note body</p>
+      <form th:action="@{'/tasks/' + ${task.id} + '/notes/delete/' + ${n.id}}" method="post">
+        <button class="btn btn-sm btn-danger">Delete note</button>
+      </form>
+    </li>
+  </ul>
+
+  <h5>Add note</h5>
+  <form th:action="@{'/tasks/' + ${task.id} + '/notes'}" method="post">
+    <div class="mb-2">
+      <input name="title" class="form-control" placeholder="Note title" required/>
+    </div>
+    <div class="mb-2">
+      <textarea name="body" class="form-control" placeholder="Note body" required></textarea>
+    </div>
+    <button class="btn btn-primary">Add note</button>
+  </form>
+</body>
+</html>

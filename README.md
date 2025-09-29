@@ -31,7 +31,7 @@ Deployed live on **Render** → [Try it here](https://task-manager-z81e.onrender
 - Java 22+
 - Maven
 
-## 📸 Screenshots
+### 📸 Screenshots
 <img width="1672" height="806" alt="image" src="https://github.com/user-attachments/assets/b5523f17-606f-4f3a-a932-353b867d8bec" />
 
 ## 🌐 Deployment
@@ -55,11 +55,6 @@ App will be available at
 ```bash
 mvn clean package
 java -jar target/task-manager-0.0.1-SNAPSHOT.jar
-
-
-
-
-
 
 ---
 

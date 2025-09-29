@@ -1,5 +1,5 @@
                                 
-# Task Manager ✅
+# Task Manager 
 
 A simple **Spring Boot + Thymeleaf** task management web application.  
 You can create, toggle (mark complete/incomplete), and delete tasks — all in one place.  

@@ -31,11 +31,18 @@ Deployed live on **Render** → [Try it here](https://task-manager-z81e.onrender
 - Java 22+
 - Maven
 
+## 📸 Screenshots
+<img width="1672" height="806" alt="image" src="https://github.com/user-attachments/assets/b5523f17-606f-4f3a-a932-353b867d8bec" />
+
+## 🌐 Deployment
+-The app is deployed on Render https://render.com/
+-No SQL database is used → Tasks reset when the server restarts.
+
 ### Clone the repository
 ```bash
 git clone https://github.com/saikamalesh415/task-manager.git
 cd task-manager
-
+```markdown
 ### Run the app
 ```bash
 mvn spring-boot:run
@@ -49,12 +56,9 @@ App will be available at
 mvn clean package
 java -jar target/task-manager-0.0.1-SNAPSHOT.jar
 
-## 🌐 Deployment
--The app is deployed on Render https://render.com/
--No SQL database is used → Tasks reset when the server restarts.
 
-## 📸 Screenshots
-<img width="1672" height="806" alt="image" src="https://github.com/user-attachments/assets/b5523f17-606f-4f3a-a932-353b867d8bec" />
+
+
 
 
 ---

@@ -41,7 +41,7 @@ Run the app
 ```
 mvn spring-boot:run
 ``` 
-- App will be available at 👉 [click here](http://localhost:8080)
+- App will be available at 👉 (http://localhost:8080)
 
 ---
 

@@ -36,10 +36,15 @@ Deployed live on **Render** → [Try it here](https://task-manager-z81e.onrender
 git clone https://github.com/saikamalesh415/task-manager.git
 cd task-manager
 
-Run the app
-
+### Run the app
+```bash
 mvn spring-boot:run
+
+
 App will be available at 👉 http://localhost:8080
+
+## 📦 Build JAR
+
 
 
 
